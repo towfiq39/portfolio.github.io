@@ -1,0 +1,253 @@
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+    
+}
+html{
+	scroll-behavior:smooth;
+}
+body{
+	overflow-x:hidden;
+}
+
+.heading{
+	width:100%;
+
+	margin-bottom:50px;
+}
+.link_active{
+	border-bottom:1px solid blue;
+	font-weight:bold;
+}
+.heading_part{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+.text-change{
+	color:red;
+	
+}
+.text-change:before{
+	content:'';
+	animation:animate 8s infinite;
+	
+}
+@keyframes animate{
+	
+	0%{
+		content: 'Freelancer';
+	}
+	
+	20%{
+		content: 'Front End  Developer';
+	}
+	
+	40%{
+		content: 'Back end  Developer';
+	}
+	
+	60%{
+		content: 'Ui & ux developer';
+	}
+	
+	75%{
+		content: 'Graphics Designer';
+	}
+	
+	100%{
+		content: 'Full Stack web developer';
+	}
+	
+}
+
+/* contact part start */
+.contact{
+	width:30%;
+	height:60vh;
+	background:#ffffff;
+	margin:20px auto;
+	padding:50px;
+	border-radius:10px;
+	z-index:100;
+	
+}
+.main_input{
+	position:relative;
+}
+.main_input .input_box{
+	width:100%;
+	position:relative;
+	border:none;
+	border-bottom:1px solid black;
+	outline:none;
+	resize:none;
+	margin:15px 0px;
+	
+}
+.main_input span{
+	position:absolute;
+	left:0;
+	top:0;
+	margin:15px 0px;
+	transition:0.5s;
+	font-size:15px;
+	
+}
+.main_input .input_box:focus{
+	border-bottom:1px solid #fd7e14;
+}
+.main_input .input_box:focus ~ span,
+.main_input .input_box:valid ~ span{
+	transform:translateY(-12px);
+	color:#b502ff;
+	font-size:12px;
+	
+}
+/* ******offer parts starts*******  */
+
+
+.offer {
+	width:100%;
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-size:cover;
+	color:black;
+	background-color:#00ffff2b;
+	height:auto;
+}
+.offer h4 {font-size:1.1rem}
+.offer p {font-size:0.9rem}
+.offer_header h3 {font-size:1.3rem}
+.offer_icon {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+padding-bottom:20px;}
+
+.progress{height:0.7rem;
+margin-bottom:30px}
+/* ******offer parts end*******  */
+
+.offer_icon {
+	color:#50d1c0;
+}
+/* ******offer parts end*******  */
+
+/* contact part end */
+
+.inner_about h3,hr{
+	margin-left:-90px;
+	margin-top:14px;
+}
+.inner_about p{
+	font-size:0.95rem!important;
+	line-height:25px;
+	margin-top:25px;
+	margin-left:-90px;
+}
+
+.background_color{
+	background-color:#00ffff2b;
+}
+
+.hidden-image{
+	display:none;
+	
+}.back_color{
+	
+	
+	color:white;
+}
+
+
+/* media queries */ 
+@media(max-width:992px){
+	.link_active{
+		border-bottom:none;
+		font-weight:bold;
+		font-size:1.2rem;
+	}
+	.text-change,.before_text_change{
+		font-size:2rem!important;
+		
+	}
+	.inner_about h3,hr{
+		margin-left:-0px;
+		margin-top:0px;
+	}
+	.inner_about p{
+		margin-top:5px;
+		line-height:20px;
+		font-size:0.9rem;
+		word-spacing:2px;
+		margin-left:-0px;
+	}
+	
+	
+}
+
+/* media queries */ 
+@media(max-width:768px){
+	.text-change,.before_text_change{
+		font-size:2rem;
+		
+	}
+	.after_text_change{
+		font-size:1.7rem;
+	}
+	.after_text_change_para{
+		font-size:1rem;
+	}
+	.inner_about h3,hr{
+		margin-left:-0px;
+		margin-top:14px;
+	}
+	.inner_about p{
+		font-size:0.95rem!important;
+		line-height:25px;
+		margin-top:25px;
+		margin-left:-0px;
+	}
+	.back_color h3{
+		font-size:1.7rem;	
+	}
+	
+
+/* media queries */ 
+@media(max-width:576px){
+	.text-change,.before_text_change{
+		font-size:1.65rem;
+		
+	}
+	.after_text_change{
+		font-size:1.45rem;
+	}
+	.after_text_change_para{
+		font-size:1rem;
+	}
+	.inner_about h3,hr{
+		margin-left:-0px;
+		margin-top:14px;
+	}
+	.inner_about p{
+		font-size:0.95rem!important;
+		line-height:25px;
+		margin-top:25px;
+		margin-left:-0px;
+	}
+	.back_color h3{
+		font-size:1.5rem;	
+	}
+	
+}
+
+
+
+
+
+
+
+
+

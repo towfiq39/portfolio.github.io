@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<!-- Bootstrap css -->
+		<link rel="stylesheet" href="../css/bootstrap.min.css" />
+		
+		<!-- Font Awesome css -->    
+		<link rel="stylesheet" href="../css/all.min.css" />
+		
+		<!-- custom css -->          
+		<link rel="stylesheet" href="contact.css" />
+		
+		<title>Contact</title>
+    	
+	</head> 
+	<body>
+		<header class="heding" style="background-image:url('../images/contactbg.jpg'); height:100vh;background-repeat:no-repeat; background-position:right; " > 
+			
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-5">
+				<a class="navbar-brand" href="https://web.facebook.com/towfikimrose.imrose.1">Towfiq Imroz</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fas fa-bars"></i>
+				</button>
+				
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item ">
+							<a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link " href="../gallery/gallery.html">Gallery</a>
+						</li>
+						
+						<li class="nav-item">
+							<a class="nav-link link_active" href="contact.html">Contact</a>
+						</li>
+					</ul>
+					
+				</div>
+			</nav>
+			<div class="header_heading">
+				<h2 class="text-center text-white">Contact Us</h2>
+				<hr class="mx-auto bg-light w-25" />
+			</div>
+			
+		</header>
+		<!-- contact section start -->
+		<section class="row background_color" id="contact"> 
+			
+			
+			<div class="contact col-lg-4 offset-lg-1 col-md-6 col-sm-9 col-9 mt-3">
+				<h2>Send Message..</h2>
+				<form action="">
+					
+					
+					<div class="main_input">
+						<input type="text" class="input_box" required />
+						<span>Name</span>
+						
+					</div>
+					<div class="main_input">
+						
+						<input type="Email" class="input_box" required/>
+						<span>Email</span>
+					</div>
+					<div class="main_input">
+						
+						<textarea name="" id="" class="input_box" required></textarea>
+						<span>Your Messsgae</span>
+					</div>
+					<input type="submit" class="btn btn-outline-dark" Value="Send" id="send_message"/>
+					
+					
+				</form>
+			</div>
+		</section><!-- contact section end -->
+		<!-- Footer section start -->
+		<section class="back_color bg-info py-3"  data-aos="fade-up" >
+			<div class=" text-center ">
+				<h3  >More Info About Me </h3>
+				<hr class="w-25 bg-light mx-auto" />
+				<h3 >Contact: 01311425570 </h3>
+				<hr class="w-50 bg-light mx-auto" />
+				<h3 >Mail: imrosetowfik2@gmail.com</h3>
+				<hr class="w-50 bg-light mx-auto" />
+				<p> Welcome here !! Myself Towfiq if you want to make more beautiful and professional website then you're in right place . </p>
+				<hr class="w-75 bg-light mx-auto" />
+				
+				<a href="#contact" class="btn btn-outline-light">Contact</a>
+				
+				<div class="social_icon my-5"> 
+					<h3>Find Me on</h3>
+					<a href="https://web.facebook.com/towfikimrose.imrose.1" class="mr-2 "><i class="fab fa-facebook-f "></i></a>
+					<a href="https://twitter.com/imroz_towfiq" class="mr-2"><i class="fab fa-twitter"></i></a>
+					<a href="https://www.linkedin.com/in/towfiq-imroz-9686a2200/" class="mr-2"><i class="fab fa-linkedin-in"></i></a>
+					<a href="https://github.com/towfiq39" class="mr-2"><i class="fab fa-github"></i></a>
+					<!-- <a href="malito:imrosetowfik2@gmail.com" class="mr-2"><i class="fab fa-linkedin-in"></i></a> -->
+					<a href = "mailto:imrosetowfik2@gmail.com?subject = Feedback&body = Message">Send Feedback</a>
+				</div>
+			</div>	
+		</section>	<!-- Footer section end -->
+		
+		
+		<!-- javascript-->
+		<script src="../js/jquery.min.js"></script>	
+		<script src="../js/proper.min.js"></script>	
+		<script src="../js/bootstrap.min.js"></script>	
+		<script src="../js/all.min.js"></script>
+		
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			$("#send_message").click(function(){
+				
+				var name=$("#name").val();
+				var mail=$("#mail").val();
+				var msg=$("#msg").val();
+				
+				alert("This functionality is not available in free version...plz mail me for your valuable message......Towfiq!!!");
+			});
+			
+			
+			AOS.init({
+				offset: 300,
+				duration: 800,
+			});
+		</script>
+	</body>
+</html>				
+
+
